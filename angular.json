@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "sourceMap": true,
             "outputPath": "dist/client",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -64,8 +65,7 @@
           "options": {
             "ssl": true,
             "sslCert": "SSL/localhost.pem",
-            "sslKey": "SSL/localhost-key.pem",
-            "sourceMap": false
+            "sslKey": "SSL/localhost-key.pem"
           },
           "configurations": {
             "production": {
